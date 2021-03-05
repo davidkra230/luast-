@@ -3,9 +3,9 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public', 'index1.html'));
+  res.sendFile(__dirname, '../main.json'));
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`app listening at http://localhost:${port}`)
 })
